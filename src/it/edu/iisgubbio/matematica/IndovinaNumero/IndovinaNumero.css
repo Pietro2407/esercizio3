@@ -1,0 +1,23 @@
+.text-field{
+	-fx-background-color: #f72d09;
+	-fx-text-fill: white;
+}
+.label{
+	-fx-text-fill: #0d91f2;
+}
+
+.button{
+	-fx-background-color: green;
+	-fx-text-fill: white;
+	-fx-max-width: 1000;
+	-fx-max-size:15;
+}
+.principale{
+	-fx-background-color: #ffff00;
+	-fx-wgap: 10;
+	-fx-padding:10 10 10 10;
+}
+.risultato{
+	-fx-text-fill: black;
+	-fx-font-size: 18;
+}

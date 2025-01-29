@@ -1,0 +1,10 @@
+.input{
+		-fx-font-family:monospaced;
+		-fx-pref-width:400;
+}
+.tfRisposta{
+	-fx-font-family:monospaced;
+}
+.lFrase{
+	-fx-font-size:30;
+}

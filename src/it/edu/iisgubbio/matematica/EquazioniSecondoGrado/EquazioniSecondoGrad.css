@@ -1,0 +1,20 @@
+.text-field{
+	-fx-background-color: yellow;
+}
+.label{
+	-fx-text-fill: blue;
+}
+
+.lx1{
+	-fx-text-fill: red;
+}
+#principale{
+	-fx-background-color: #ff8040;
+}
+.risultato{
+	-fx-text-fill: red;
+}
+.button{
+	-fx-background-color: green;
+	-fx-text-fill: white;
+}
