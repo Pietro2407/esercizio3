@@ -10,14 +10,14 @@ import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
 public class Anagrammi extends Application{
-	
+
 	Label lParola1=new Label("parola1");
 	Label lParola2=new Label("parola2");
 	Label lRisposta=new Label("??");
 	TextField tfParola1=new TextField();
 	TextField tfParola2=new TextField();
 	Button bVai=new Button("anagramma");
-	
+
 	public void start(Stage finestra) throws Exception {
 		GridPane principale = new GridPane();
 		principale.add(bVai,0, 2);
@@ -31,7 +31,6 @@ public class Anagrammi extends Application{
 		principale.setHgap(10);
 		Insets spazio = new Insets(15);
 		principale.setPadding(spazio);
-
 
 		Scene scena = new Scene(principale);
 		finestra.setTitle("anagramma");
@@ -51,21 +50,22 @@ public class Anagrammi extends Application{
 				for(int pos=0; pos<parola2.length && presente==false; pos++) {
 					if (parola1[i]==parola2[pos]) {
 						presente=true;
-					}
-					if (presente == true) {
+						parola2[pos]=' ';
 						c++;
+					}
+					if (presente) {
+
 					}
 				}
 			}
+		}
+		if(c==parola1.length){
 			lRisposta.setText("è un anagramma");
+
 		}else {
 			lRisposta.setText("non è anagramma");
 		}
-
-
 	}
-
-
 	public static void main(String[] args) {
 		launch(args);
 	}
