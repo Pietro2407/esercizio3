@@ -39,23 +39,23 @@ public class CesareParametrico extends Application{
 		bDecifra.setOnAction( e -> eseguiDecifra() );
 	}
 	private void eseguiCifra() {
-		char parola1[]=tfParola1.getText().toCharArray();
-		for(int i=0; i<parola1.length; i++) {
-			switch(parola1[i]) {
+		char lettere[]=tfParola1.getText().toCharArray();
+		for(int i=0; i<lettere.length; i++) {
+			switch(lettere[i]) {
 			case 'z':
-				parola1[i]='c';
+				lettere[i]='c';
 				break;
 			case 'y':
-				parola1[i]='b';
+				lettere[i]='b';
 				break;
 			case 'x':
-				parola1[i]='a';
+				lettere[i]='a';
 				break;
 			default:
-				parola1[i]=(char)(parola1[i]+3);
+				lettere[i]=(char)(lettere[i]+3);
 			}
 		}
-		String parole=new String(parola1);
+		String parole=new String(lettere);
 		tfParola2.setText(parole);
 	}
 	
