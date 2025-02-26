@@ -59,10 +59,10 @@ public class Rombo extends Application{
 		testodMinore=cDiagmin.getText();
 		vdMaggiore=Integer.parseInt(testodMaggiore);
 		vdMinore=Integer.parseInt(testodMinore);
-		Ipotenusa=Math.sqrt((vdMaggiore*vdMinore)+(vdMinore+vdMinore));
+	/*	Ipotenusa=Math.sqrt((vdMaggiore*vdMinore)+(vdMinore+vdMinore));
 		Perimetro=(ipotenusa*ipotenusa*ipotenusa*ipotenusa);
 		testo=""+Perimetro;
-		eRisultatoPerimetro.setText(testoPerimetro);	
+		eRisultatoPerimetro.setText(testoPerimetro);	*/
 	}
 		
 		public static void main(String[] args) {
