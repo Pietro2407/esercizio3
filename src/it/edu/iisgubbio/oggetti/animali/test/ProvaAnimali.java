@@ -19,8 +19,13 @@ public class ProvaAnimali {
 		
 		System.out.println(briciola);
 		System.out.println(artù);
+		System.out.println(briciola.età(2025));
 		
-		
+		if(briciola.verificaProprietario("Brunetti")) {
+			System.out.println("è il proprietario");
+		}else {
+			System.out.println("non è il proprietario");
+		}
 	}
 	
 

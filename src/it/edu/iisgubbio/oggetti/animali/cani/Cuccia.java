@@ -6,6 +6,7 @@ public class Cuccia {
 	private int numeroPosti;
 	private String colore;
 	private boolean proprietario;
+	private int anno;
 	
 	public boolean isInterno() {
 		return interno;
@@ -48,6 +49,5 @@ public class Cuccia {
 			}
 		}
 	}
-
+	
 }
-//nella classe cane implementare il metodo che dato un nome dice se e proprietario o no

@@ -26,6 +26,14 @@ public class Cane {
 	public String toString() {
 		return "nome cane: "+nome+" anno di nascita: "+anno+" nome proprietario "+nomeProprietario;
 	}
-
-
+	public boolean verificaProprietario(String nome) {
+		if(nomeProprietario.equals(nome)) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	public int età(int anno) {
+		return anno-this.anno;
+	}
 }
