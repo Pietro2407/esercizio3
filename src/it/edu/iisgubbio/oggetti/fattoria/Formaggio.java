@@ -18,18 +18,27 @@ public class Formaggio extends Prodotto{
 	public String toString() {
 		if(dop==true) {
 			if(tempoStagionatura>0) {
-				return "Formaggio:"+ nome+ " costo al chilo "+ prezzoAlChilo+"€"+" stagionato" + tempoStagionatura + " mesi" +" non è dop";
+				return "Formaggio:"+ nome+ " costo al chilo "+ prezzoAlChilo+"€"+" stagionato " + tempoStagionatura + " mesi " +"  è dop ";
 			}else {
 				return "Formaggio:"+ nome+ " costo al chilo "+ prezzoAlChilo+"€" +" è dop";
 			}
 		}else {
 			if(tempoStagionatura>0) {
-				return "Formaggio:"+ nome+ " costo al chilo "+ prezzoAlChilo+"€" + " stagiontato" + tempoStagionatura + " mesi" +"€"+" è dop";
+				return "Formaggio:"+ nome+ " costo al chilo "+ prezzoAlChilo+"€" + " stagiontato " + tempoStagionatura + " mesi " +" non è dop ";
 			}else {
-				return "Formaggio:"+ nome+ " costo al chilo "+ prezzoAlChilo+"€" +" è dop";
+				return "Formaggio:"+ nome+ " costo al chilo "+ prezzoAlChilo+"€" +" non è dop ";
 			}
 		}
 	}
+
+	public void setTempoStagionatura(int tempoStagionatura) {
+		this.tempoStagionatura = tempoStagionatura;
+	}
+
+	public void setDop(boolean dop) {
+		this.dop = dop;
+	}
+	
 }
 
 

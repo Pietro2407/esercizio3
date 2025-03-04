@@ -19,9 +19,9 @@ protected boolean biologico;
 	@Override
 	public String toString() {
 		if(biologico==true) {
-			return "Ortaggio:"+ nome+ " costo al chilo "+ prezzoAlChilo+"€"+" l'ortaggio è biologico";
+			return "Ortaggio:"+ nome+ " costo al chilo "+ prezzoAlChilo+"€"+" l'ortaggio è biologico ";
 		}else {
-			return "Ortaggio:"+ nome+ " costo al chilo "+ prezzoAlChilo+"€"+" l'ortaggio non è biologico";
+			return "Ortaggio: "+ nome+ " costo al chilo "+ prezzoAlChilo+"€"+" l'ortaggio non è biologico ";
 		}
 	}
 
